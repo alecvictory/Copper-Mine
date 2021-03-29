@@ -4,7 +4,7 @@ let automultiplier = 0
 
 let clickUpgrades = {
     pickaxe: {
-        price: 1,
+        price: 2,
         quantity: 0,
         multiplier: 1,
     },
