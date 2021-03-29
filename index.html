@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkpoint 2</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <h1 class="text-center">VALHEIM COPPER MINE</h1>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <button onclick="mine()" id="mine">
+                    <img src="/photos/mine.jpg" class="img-thumbnail target" alt="...">
+                </button>
+                <div class="col">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h1 id="resources"> RESOURCES </h1>
+                            <span>Copper:<span id="copper">--</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        UPGRADES PURCHASED
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="">
+                            <li class="list-group-item d-flex justify-content-around">Pickaxe +1</li>
+                            <span><span class="" id="pickaxe">--</span></span>
+                        </div>
+                        <div>
+                            <li class="list-group-item d-flex justify-content-around">Sledgehammer +5</li>
+                            <span><span id="sledgehammer">--</span></span>
+                        </div>
+                        <div>
+                            <li class="list-group-item d-flex justify-content-around">Steam Engine +20</li>
+                            <span><span id="steamengine">--</span></span>
+                        </div>
+                        <div>
+                            <li class="list-group-item d-flex justify-content-around">Goblin Laborer +10</li>
+                            <span><span id="goblinlaborer">--</span></span>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">
+                        UPGRADES
+                    </div>
+                    <button onclick="buyPickaxe()">
+                        <li class="list-group-item">Pickaxe</li>
+                        <span><span id="pickaxeprice">--</span></span>
+                    </button>
+                    <button onclick="buySledgehammer()">
+                        <li class="list-group-item">Sledgehammer</li>
+                        <span><span id="sledgehammerprice">--</span></span>
+                    </button>
+                    <button onclick="buySteamengine()">
+                        <li class="list-group-item">Steam Engine</li>
+                        <span><span id="steamengineprice">--</span></span>
+                    </button>
+                    <button onclick="buyGoblinlaborer()">
+                        <li class="list-group-item">Goblin Laborer</li>
+                        <span><span id="goblinlaborerprice">--</span></span>
+                    </button>
+                    <ul class="list-group list-group-flush">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
